@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/ChallengeBox"  ],
   "exclude": [
     "node_modules"
   ]
