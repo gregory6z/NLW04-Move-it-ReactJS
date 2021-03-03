@@ -3,6 +3,7 @@
 <img src="public/devtime3.png" alt="devtime1" />
 <img src="public/devtime4.png" alt="devtime1" />
 <h1> DevTime </h1>
+<strong>Desenvolvido durante a NLW-04-Move.it</strong>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -34,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O move.it é um app que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.
+O DevTime é um app que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.
 
 ## 🔖 Layout
 
