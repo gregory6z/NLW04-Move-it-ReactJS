@@ -1,6 +1,8 @@
-<h1 align="center">
-  <img alt="move.it" title="move.it" src=".github/logo.png" />
-</h1>
+<img src="public/devtime1.png" alt="devtime1" />
+<img src="public/devtime2.png" alt="devtime1" />
+<img src="public/devtime3.png" alt="devtime1" />
+<img src="public/devtime4.png" alt="devtime1" />
+<h1> DevTime </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

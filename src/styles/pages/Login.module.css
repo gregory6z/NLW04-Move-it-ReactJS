@@ -1,0 +1,99 @@
+.Container {
+  background: #44475a;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  color: #282a36;
+}
+.Container img {
+  margin-left: 6.5rem;
+}
+.Content {
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.09);
+  width: 50%;
+  display: flex;
+  background: #6272a4;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 12rem;
+}
+.Container h1 {
+  text-align: center;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Container strong {
+  margin-bottom: 2rem;
+}
+.title {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.title span {
+  max-width: 220px;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  color: #8be9fd;
+}
+.Content form {
+  order: 0;
+  display: flex;
+  max-width: 350px;
+  padding: 5px;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  background: #44475a;
+  border-radius: 5px;
+}
+.Content input {
+  order: 1;
+  background: #44475a;
+  width: 100%;
+  padding: 10px;
+  margin-right: 5px;
+
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+
+  border: none;
+  outline: none;
+}
+.Content input:focus {
+  color: blanchedalmond;
+}
+.Content input:placeholder {
+  color: #bfbfbf;
+  border: none;
+}
+
+.Container button {
+  order: 2;
+
+  width: 60px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+}
+.Container button svg {
+  color: var(--white);
+}

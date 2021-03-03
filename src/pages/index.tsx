@@ -1,68 +1,39 @@
-/* eslint-disable react/destructuring-assignment */
-import Head from 'next/head';
-import { GetServerSideProps } from 'next';
-import ChallengeBox from '../components/ChallengeBox';
-import CompletedChallenges from '../components/CompletedChallanges';
-import Countdown from '../components/Countdown';
-import ExperienceBar from '../components/ExperienceBar';
-import Profile from '../components/Profile/index';
-import { CountdownProvider } from '../contexts/CountdownContext';
+import styles from '../styles/pages/Login.module.css'
+import { FiGithub, FiLogIn } from 'react-icons/fi';
 
-import styles from '../styles/pages/Home.module.css';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
-import Sidebar from '../components/Sidebar';
 
-interface HomeProps {
-  level:number;
-  currentExperience:number;
-  challengesCompleted:number;
-}
-
-export default function Home(props:HomeProps) {
+function Login() {
   return (
 
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      
-    <div className={styles.container}>
-    <Sidebar />
-      <Head>
-        <title>Início | Move.it </title>
-      </Head>
+<div className={styles.Container}>
+<img src="icons/devTime.svg" alt="devtime" />
+    <div className={styles.Content}>
+     <h1>devTime</h1> 
+    <strong>Bem-vindo</strong>
 
-      
-      
-      <div className={styles.content}> 
-        <ExperienceBar />
+<div className={styles.title}>
+  <FiGithub size={36} />
+  <span>Faça login com seu GitHub para iniciar.</span>
+</div>
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
+<form >
+  <input
+    type="text"
+    placeholder="Digite seu username"
+   
+  />
+  <button type="submit">
+    <FiLogIn size={24} />
+  </button>
+</form>
+</div>
+</div>
+);
 
-        </CountdownProvider>
-      </div>
-    </div>
-    </ChallengesProvider>
-  );
+
+
+
+ 
 }
-export const getServerSideProps:GetServerSideProps = async (ctx) => {
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted),
-    },
-  };
-};
+
+export default Login;
